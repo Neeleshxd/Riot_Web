@@ -271,3 +271,20 @@ body {
     opacity: 0.8;
   }
 }
+#Play-button {
+  @apply flex items-center justify-center px-4 py-2 bg-red-600 text-white rounded-full;
+  min-width: 120px; /* Prevent shrinking */
+  font-size: 1rem; /* Ensure readable text */
+  transition: all 0.3s ease-in-out; /* Smooth resizing */
+}
+
+#Play-button:hover {
+  @apply bg-red-700; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+  #Play-button {
+    @apply px-3 py-1 text-sm; /* Adjust padding and font size */
+    min-width: 100px; /* Further reduce width for very small screens */
+  }
+}

@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div id="about" className='min-h-screen w-screen'>
       <div className='relative mb-8 mt-36  flex flex-col items-center gap-5 '>
-        <h2 className='font-general text-sm uppercase md:text-[10px]'>We Are <b className="special-font text-6xl font-bold text-red-600">Valorant</b></h2>
+        <h2 className='font-general text-sm uppercase md:text-[10px]'>We Are <b className="special-font text-5xl font-bold text-red-600">Valorant</b></h2>
         <AnimatedTitle title="Disc<b>o</b>ver the World's <br/>L<b>a</b>rgest FPS community game " containerClass="mt-5 !text-black text-center"/>
         <div className='about-subtext'><p>Join in this massive community and showcase your gaming skills.</p>
         </div>

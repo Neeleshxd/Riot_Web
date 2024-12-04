@@ -1,9 +1,9 @@
-import About from "./componenets/About"
-import Hero from "./componenets/hero"
-import Navbar from "./componenets/Navbar"
-import Features from "./componenets/Features"
-import Story from "./componenets/Story"
-import Footer from "./componenets/Footer"
+import About from "./components/About"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Features from "./components/Features"
+import Story from "./components/Story"
+import Footer from "./components/Footer"
 const App = () => {
   return (
     <main className='relative min-h-screen w-screen overflow-x-hidden '>

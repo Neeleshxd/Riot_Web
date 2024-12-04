@@ -46,13 +46,13 @@ const Story = () => {
 
   return (
     <section id="story" className="min-h-dvh w-screen bg-black text-blue-50">
-      <div className="flex size-full flex-col items-center py-10 pb-24">
+      <div className="flex size-full flex-col items-center py-6 pb-12">
         {/* Header Section */}
         <div className="max-w-screen-md text-center md:text-left">
-          <p className="text-sm uppercase font-circular-web text-violet-50 md:text-lg">
+          <p className="text-sm uppercase font-circular-web text-violet-50 md:text-lg mt-2">
             CREATIVITY IS YOUR GREATEST WEAPON
           </p>
-          <p className="mt-3 text-sm font-general leading-relaxed text-gray-300 md:text-base">
+          <p className="mt-2 text-sm font-general leading-relaxed text-gray-300 md:text-base">
             More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine.
             <br />
             No two Agents play alike, just as no two highlight reels will look the same.
@@ -60,16 +60,16 @@ const Story = () => {
         </div>
 
         {/* Animated Title and Image Section */}
-        <div className="relative size-full mt-7">
+        <div className="relative size-full mt-4 md:mt-5">
           <AnimatedTitle
             title="Our Agents"
-            containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
+            containerClass="mt-2 pointer-events-none mix-blend-difference relative z-10 text-white md:text-shadow-lg text-shadow-md"
           />
-          <div className="story-img-container mt-12">
+          <div className="story-img-container mt-4 md:mt-5">
             <div className="story-img-mask">
               <div className="story-img-content">
                 <img
-                  src="/img/entrance.jpg"
+                  src="img/entrance.jpg"
                   ref={frameRef}
                   onMouseLeave={handleMouseLeave}
                   onMouseEnter={handleMouseMove}
@@ -84,14 +84,14 @@ const Story = () => {
         </div>
 
         {/* Call-to-Action Section */}
-        <div className="flex flex-col items-center justify-center w-full mt-12 md:mt-8 md:items-center">
-          <p className="text-sm max-w-md text-center font-circular-web text-violet-50 md:text-right md:max-w-lg md:mr-10">
+        <div className="flex flex-col items-center justify-center w-full mt-6 md:mt-8">
+          <p className="text-sm max-w-md text-center font-circular-web text-violet-50 md:text-right md:max-w-lg md:mr-10 mb-6">
             To know more about our Radiant agents, click below.
           </p>
           <ButtonWithoutBorder
             id="relam-button"
             title="View Agents"
-            containerClass="mt-5"
+            containerClass="mt-4"
           />
         </div>
       </div>

@@ -103,14 +103,25 @@ const hero = () => {
             onLoadedData={handleVideoLoaded}/>
          </div>
          <h1 className='special-font  hero-heading absolute bottom-5 right-5 z-40 text-blue-75'> Li<b>M</b>its</h1>
-          <div className='absolute left-0 top-0 z-40  size-full'>
-            <div className='mt-24 px-5 sm:px-10'>
-              <h1 className='special-font hero-heading text-blue-100'>De<b>F</b>y</h1>
-              <p className='mb-5 max-w-64 font-robert-regular text-blue-100'> Unleash your firepower ,<br/> And create your own Meta</p>
-              <Button id="play-free" title="Play For Free" leftIcon={TiLocationArrow} containerClass="bg-red-600 flex-center gap-1 hover:violet-300"
-              />
-            </div>
-          </div>
+         <div className="absolute left-0 top-0 z-40 size-full">
+  <div className="mt-24 px-5 sm:px-10">
+    <h1 className="special-font hero-heading text-blue-100">De<b>F</b>y</h1>
+    <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
+      Unleash your firepower, <br /> And create your own Meta
+    </p>
+    {/* Use responsive utilities to hide on small screens */}
+    <Button 
+  id="play-free" 
+  title="Play For Free" 
+  leftIcon={<TiLocationArrow />} 
+  containerClass="bg-red-600 flex-center gap-1 hover:bg-violet-50 hidden sm:flex border border-white p-[2px] rounded-md"
+/>
+
+
+  </div>
+</div>
+
+
         </div>
         <h1 className='special-font  hero-heading absolute bottom-5 right-5  text-black'> Li<b>M</b>its</h1>
     </div>
